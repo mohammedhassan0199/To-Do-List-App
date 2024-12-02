@@ -47,7 +47,7 @@ This To-Do List App allows users to manage their tasks with various features:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/mohammedhassan0199/To-Do-List-App.git
+   git clone https://github.com/mohammedhassan0199/To-Do-List-App
 Navigate to the project directory:
 
 bash
