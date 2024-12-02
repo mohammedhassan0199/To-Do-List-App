@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+                
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <h1>To-Do List App</h1>
+    <!-- Main container -->
+     <div class="wrapper">
+        <!-- Input feild -->
+        <div class="task-input">
+            <i class="fa fa-align-left"></i>
+            <input type="text" placeholder="Enter task">
+            
+        </div>
+        
+        <!-- control section for showing status of given data -->
+        <div class="controls">
+            
+              <!--  for filtring status of given data -->
+            <div class="filter">
+
+            <span id="all" class="active">all</span>
+            <span id="Pending">pending</span>
+            <span id="Completed">completed</span>
+            </div>
+
+             <!--clearing all -->
+        <button class="clear-all">clear</button>
+        </div>
+
+       
+
+        <!-- for showing data -->
+         <ul class="task-box">
+            <li class="task-list">
+
+                <!-- for marking task is completed or not -->
+                <label for="1">
+                    <input type="checkbox" id="1" >
+                    <p>hassan</p>
+                </label>
+                
+                <!-- here we can edit and delete -->
+                <div class="settings">
+                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
+                    
+                    <!-- edit and delete selection -->
+                    <ul class="edit-menu">
+                       <li><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i>Edit</li> 
+                        <li><i class="fa-solid fa-trash" aria-hidden="true"></i>Delete</li>
+                    </ul>
+                </div>
+            </li>
+         </ul>
+     </div>
+    <script src="script.js"></script>
+</body>
+</html>
